@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color:  rgb(255, 249, 240);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "section section section"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    color: rgb(56, 7, 121);
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+}
+
+.btn {
+    background-color: rgb(240, 141, 48);
+    color: #ffffff;
+    letter-spacing: 0.07rem;
+    margin-top: 15px;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+.repo {
+    background-color: rgb(99, 68, 236);
+}
+
+.btn:hover {
+    background-color: rgb(133, 71, 30);
+    transition-duration: 0.3s;
+}
+.repo:hover {
+    background-color: rgb(56, 7, 121);
+}
+
+
+footer {
+    grid-area: footer;
+    background-color:rgb(235, 161, 92);
+    text-align: center;
+}
